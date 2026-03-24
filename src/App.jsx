@@ -56,7 +56,13 @@ function App() {
           title="Computer"
           item={computerSelect}
           flipKey={flipKey}
-          result={result === "Win" ? "Lose" : result === "Lose" ? "Win" : "Tie"}
+          result={
+            result === "Win"
+              ? "Lose"
+              : result === "Lose"
+                ? "Win"
+                : result && "Tie"
+          }
         />
       </div>
       <div className="main">
