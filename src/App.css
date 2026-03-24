@@ -7,13 +7,23 @@
 
 .box {
   border-radius: 8px;
-  border: 1px solid black;
+  border: 5px solid black;
   width: 500px;
   height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.box.Win {
+  border-color: forestgreen;
+  color: forestgreen;
+}
+
+.box.Lose {
+  border-color: firebrick;
+  color: firebrick;
 }
 
 .item-img {
